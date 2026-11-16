@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Review your saved Cybexhark order previews, items, and totals.">
+    <title>My Orders | Cybexhark</title>
+    <link rel="stylesheet" href="store.css">
+    <link rel="icon" href="CybexIcon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="store-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Cybexhark shop home">
+                <img class="brand-mark" src="CybexIcon.png" alt="">
+                <span class="brand-copy"><strong>CYBEXHARK</strong><small>TRAIN WITH PURPOSE</small></span>
+            </a>
+            <div class="header-note"><span class="status-dot"></span> YOUR ORDER HISTORY</div>
+            <a class="header-cart" href="checkout.html">Your bag <span class="cart-count" aria-live="polite">0</span><span aria-hidden="true">→</span></a>
+        </header>
+
+        <nav class="side-nav" aria-label="Store navigation">
+            <p class="nav-label">Explore</p>
+            <a class="nav-link" href="index.html"><span>01</span> Shop</a>
+            <a class="nav-link" href="about.html"><span>02</span> About</a>
+            <a class="nav-link" href="services.html"><span>03</span> Services</a>
+            <a class="nav-link" href="contact.html"><span>04</span> Contact</a>
+            <a class="nav-link" href="faq.html"><span>05</span> FAQ</a>
+            <a class="nav-link" href="portfolio.html"><span>06</span> Portfolio</a>
+            <a class="nav-link" href="profile.html"><span>07</span> Profile</a>
+            <a class="nav-link" href="org-chart.html"><span>08</span> Org chart</a>
+            <a class="nav-link" href="index.html#featured"><span>09</span> Featured gear</a>
+            <a class="nav-link" href="checkout.html"><span>10</span> Checkout</a>
+            <a class="nav-link" href="payment.html"><span>11</span> Payment</a>
+            <a class="nav-link is-current" href="orders.html" aria-current="page"><span>12</span> My Orders</a>
+            <div class="nav-help"><span class="help-icon" aria-hidden="true">?</span><p>Need a hand?</p><a href="contact.html">Contact our team</a></div>
+        </nav>
+
+        <main class="page-content orders-content">
+            <section class="page-intro">
+                <p class="eyebrow">YOUR CYBEXHARK HISTORY</p>
+                <h1>My orders<span class="title-period">.</span></h1>
+                <p>Review items, quantities, prices, and totals from your checkout previews.</p>
+            </section>
+
+            <section class="orders-summary" aria-label="Order summary">
+                <div><span>Saved previews</span><strong id="orders-count">0</strong></div>
+                <div><span>Total preview value</span><strong id="orders-total">$0.00</strong></div>
+            </section>
+
+            <section class="orders-list-section" aria-labelledby="orders-list-title">
+                <div class="orders-list-heading">
+                    <div><p class="rail-label">ORDER HISTORY</p><h2 id="orders-list-title">Your saved orders</h2></div>
+                    <a class="plain-link" href="index.html#featured">Continue shopping <span aria-hidden="true">→</span></a>
+                </div>
+                <div id="orders-list" class="orders-list" aria-live="polite"></div>
+                <div id="orders-empty" class="orders-empty">
+                    <span class="orders-empty-mark" aria-hidden="true">□</span>
+                    <h3>No saved orders yet</h3>
+                    <p>After you preview checkout, your order details will be saved here on this browser.</p>
+                    <a class="button button-dark" href="index.html#featured">Browse the gear <span aria-hidden="true">→</span></a>
+                </div>
+            </section>
+        </main>
+
+        <aside class="right-rail" aria-label="Order tracking information">
+            <div class="rail-block">
+                <p class="rail-label">ORDER STATUS</p>
+                <h2>Keep your details close.</h2>
+                <p>Your saved order previews stay in this browser so you can review exactly what was in each checkout.</p>
+            </div>
+            <div class="rail-block rail-benefits">
+                <p class="rail-label">DEMO TRACKING</p>
+                <p><span>01</span> Order previews only</p>
+                <p><span>02</span> No real payment</p>
+                <p><span>03</span> No live shipping updates</p>
+            </div>
+            <div class="rail-stamp" aria-hidden="true">MOVE<br>WITH<br>INTENT<span>✳</span></div>
+        </aside>
+
+        <footer class="site-footer"><span>© 2026 CYBEXHARK</span><span>BUILT FOR THE NEXT REP.</span><span class="demo-note">DEMO ORDERS ARE SAVED IN THIS BROWSER</span></footer>
+    </div>
+    <script src="store.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Activity No. 5</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #071b45, #168bd1, #dcecff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        .container {
+            width: min(100%, 1120px);
+            text-align: center;
+            padding: clamp(20px, 4vw, 42px);
+        }
+
+        h1 {
+            color: white;
+            font-size: clamp(28px, 5vw, 42px);
+            line-height: 1.1;
+            margin: 0 0 10px;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        p {
+            color: white;
+            font-size: clamp(15px, 2.5vw, 18px);
+            margin: 0 0 clamp(20px, 4vw, 32px);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+            gap: clamp(10px, 2vw, 18px);
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border: clamp(3px, 0.5vw, 5px) solid white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .gallery img:hover {
+                transform: scale(1.04);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            }
+        }
+
+        @media (max-width: 420px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                padding: 18px 8px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Photo Gallery</h1>
+        <p>Activity No.3 5 — 20 Pictures</p>
+
+        <div class="gallery">
+
+            <img src="DavidLaid.jpeg" alt="Picture 1">
+            <img src="DavidMartinez.jpg" alt="Picture 2">
+            <img src="Capri.jpeg" alt="Picture 3">
+            <img src="D.jpeg" alt="Picture 4">
+            <img src="Lucy.jpeg" alt="Picture 5">
+
+            <img src="euphoria.png" alt="Picture 6">
+            <img src="DavidLaid.jpeg" alt="Picture 7" style="filter: sepia(25%)">
+            <img src="Capri.jpeg" alt="Picture 8" style="filter: saturate(1.4)">
+            <img src="Lucy.jpeg" alt="Picture 9" style="filter: hue-rotate(15deg)">
+            <img src="DavidMartinez.jpg" alt="Picture 10" style="filter: brightness(1.08)">
+
+            <img src="euphoria.png" alt="Picture 11" style="filter: contrast(1.15)">
+            <img src="D.jpeg" alt="Picture 12" style="filter: grayscale(20%)">
+            <img src="DavidMartinez.jpg" alt="Picture 13" style="filter: sepia(15%)">
+            <img src="Lucy.jpeg" alt="Picture 14" style="filter: saturate(1.2)">
+            <img src="DavidLaid.jpeg" alt="Picture 15" style="filter: brightness(0.95)">
+
+            <img src="Capri.jpeg" alt="Picture 16" style="filter: contrast(1.1)">
+            <img src="D.jpeg" alt="Picture 17" style="filter: hue-rotate(-15deg)">
+            <img src="euphoria.png" alt="Picture 18" style="filter: grayscale(10%)">
+            <img src="Lucy.jpeg" alt="Picture 19" style="filter: sepia(10%)">
+            <img src="DavidMartinez.jpg" alt="Picture 20" style="filter: saturate(1.3)">
+
+        </div>
+
+    </div>
+
+</body>
+</html>
